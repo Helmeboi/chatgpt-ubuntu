@@ -1,0 +1,9 @@
+applications:
+  - name: ubuntu-desktop-web
+    memory: 4G
+    disk_quota: 4G
+    instances: 1
+    buildpack: https://github.com/cloudfoundry/binary-buildpack.git
+    command: bash run.sh
+    env:
+      TZ: Europe/Cairo
